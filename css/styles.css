@@ -105,6 +105,7 @@
 text-align: center;
 background-color: var(--footer-background-color);
 color: #FFFFFF;
+padding: 200px 452px;
 }
 
 .hero-title {
@@ -115,9 +116,6 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 }
 
-.hero-section > .container {
-    padding: 200px 252px;
-}
 .hero-button {
 font-weight: 700;
 font-family: inherit;
@@ -156,9 +154,10 @@ background: var(--hover-hero-button-color);
 
 .reason-list {
     display: flex;
+    margin-bottom: -94px;
 }
 
-.section h3 {
+.section .reason-item > h3 {
     font-weight: 700;
     font-size: inherit;
     line-height: 1.14;
@@ -221,18 +220,22 @@ color: var(--title-text-color);
     margin: 30px; */
 
 /* } */
+
+.team-member-details {
+    padding: 30px 0;
+
+}
 .team-member-name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;  
     color: var(--title-text-color);
-    padding-top: 30px;
 }
-.team-member > .team-member-position {
+
+.team-member-position {
     font-size: 16px;
     line-height: 1.19;
-    padding: 10px 0 30px;
-
+    margin-top: 10px;
 }
 
 /* portfolio filter */
@@ -285,14 +288,15 @@ border-style: none;
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
-    padding: 20px 0 0 24px; 
+    /* padding: 20px 0 0 24px;  */
 }
 
 .progects-list p {
     font-size: 16px;
     line-height: 1.88;
-    padding: 4px 0 20px 24px;
+    /* padding: 4px 0 20px 24px; */
 }
+
 
 .progect-item {
     margin:15px;
@@ -300,6 +304,14 @@ border-style: none;
     border: 1px solid #EEEEEE;
 }
 
+.progect-description {
+    padding: 20px 24px;
+    display: block;
+}
+
+.progect-description > p { 
+    margin-top: 4px;
+}
 /* ALTERNATIVE================
 
 .progect-item:nth-child(3n) {
@@ -315,27 +327,30 @@ border-style: none;
 
 .footer-section {
     background-color: var(--footer-background-color);
-}
-.footer {
     padding: 60px 0;
 }
+
 .address {
     line-height: 1.71;
     font-style: normal;
-    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.maito .contact-details {
+    padding: 9px 0;
 }
 .contact-address {
-    color: var(--background-color);
+    color: var(--background-color); 
     text-decoration: none;
-    padding-top: 9px;
 }
 
 .contact-details {
     color: var(--footer-links-color);
     text-decoration: none;
-    padding-top: 9px;
-
+    display:block;
+    margin-top: 9px
 }
+
 .contact-address:hover,
 .contact-details:hover,
 .contact-address:focus,
